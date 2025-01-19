@@ -15,7 +15,7 @@ const Homepage = async () => {
 const data:Blog[] = await client.fetch(query)
 
   return (
-    <div className='grid grid-cols-3'>
+    <div className='grid grid-cols-3 md:grid-cols-1 lg:grid-cols-3'>
      { data.map((data:Blog)=>( 
       <Hero data={data} key={data.slug} />
       ))
@@ -30,3 +30,4 @@ const data:Blog[] = await client.fetch(query)
 }
 
 export default Homepage
+

@@ -14,7 +14,7 @@ const Hero = ({data}:{data:Blog}) => {
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src={urlFor(data.image).width(500).height(300).url()}
+            src={urlFor(data.image).url()}
             alt="blog"
           />
           <div className="p-6">
